@@ -15,6 +15,7 @@ public class Ejercicio06 {
   
     System.out.println("Introduzca 15 números: ");
   
+    // Almacena los números introducidos por teclado en el Array
     for(int i = 0 ; i < arrayInput.length; i++){
       arrayInput[i] = Integer.parseInt(n.nextLine());
     }
@@ -22,6 +23,7 @@ public class Ejercicio06 {
     System.out.println();
     System.out.println("El array se ha almacenado de la siguiente forma: ");
     
+    // Muestra los numeros almacenados
     for (int j = 0; j < arrayInput.length ; j++){
         if (j == 0){
           System.out.printf("%5s %2d " , "Indice|" , j);
@@ -40,15 +42,20 @@ public class Ejercicio06 {
       }
     }
     
+    // Almacena el último numero del array porque se va a machacar al desplazar
+    // los números.
     int ultNum = arrayInput[14];
     
+    // Se desplazan los números a la siguiente posición de derecha a izquierda.
     for(int z = 14; z > 0  ; z--){
       arrayInput[z] = arrayInput[z - 1];
     }
     
+    // El último número ahora es el primero
     arrayInput[0] = ultNum;
     
     
+    // Se muestra el Array rotado.
     System.out.println();
     System.out.println("-----------------------------------------------------");
     System.out.println();
