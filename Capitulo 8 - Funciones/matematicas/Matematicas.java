@@ -1,5 +1,5 @@
 /* Funciones matemáticas
-@author Lucas Lobato
+* @author Lucas Lobato
 */
 package matematicas;
 public class Matematicas {
@@ -39,7 +39,7 @@ public class Matematicas {
     for(int i = 2; i < sPrimo;i++){
       if(sPrimo % i == 0){
         sPrimo++;
-      };
+      }
     }
     return x;
   }
